@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf=8">
+		<title>500px</title>
+		<!-- Loading in stylesheet -->
+		<link rel="stylesheet" href="./style.css">
+	</head>
+	<body>
+
+		<!-- onsubmit event handler -->
+		<form id="userSearchForm" onsubmit='getUserSearch(event)'>
+			<input id="userSearch" type="textarea"></input>
+			<input type="submit"></input>
+		</form>
+		<button id="loadMore" type="button">Load More</button>
+
+		<div id="container">
+			<!-- Inject Images Here -->
+		</div>
+
+	<!-- Loading in scripts -->
+	<script defer src="./app.js"></script>
+	<script defer src="./fetchData.js"></script>
+	<script defer src="./renderData.js"></script>
+	<script defer src="./updateData.js"></script>
+	
+	</body>
+</html>

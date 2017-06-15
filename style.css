@@ -1,0 +1,57 @@
+body {
+	background-color: black;
+}
+
+#container {
+	display: flex;
+	-webkit-flex-direction: row;
+	-webkit-align-items: baseline;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    clear: both;
+}
+
+#userSearchForm {
+	float: left;
+}
+
+#loadMore {
+	float: right;
+}
+
+.image {
+	position: relative;
+}
+
+.imageData {
+	display: none;
+}
+
+img:hover {
+	filter:blur(2px);
+}
+
+p {
+	text-align: center;
+	font-family: Verdana;
+	font-size: 12px;
+	position: absolute;
+	color: white;
+	background-color: black;
+    z-index: 1;
+}
+
+p.comments {
+    top: 75px;
+    left: 5px;
+}
+
+p.votes {
+    top: 40px;
+    left: 5px;
+}
+
+p.fullname {
+    top: 5px;
+    left: 5px;
+}
